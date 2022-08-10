@@ -1,0 +1,36 @@
+#hero {
+  margin-right: 0;
+}
+#img1 {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 116px;
+  border-radius: 100px / 100px;
+  background-color: transparent;
+  border-left: -200px;
+  /* border: 41.52px solid rgb(252, 248, 248); */
+}
+
+#heart {
+  position: relative;
+  top: 6px;
+  left: 25px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: '';
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
